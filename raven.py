@@ -24,7 +24,7 @@ script_dir = os.path.dirname(__file__)
 #image_path = os.path.join(script_dir, "raven.JPG")
 
 try:
-    image = Image.open(r"C:\Users\USER A\Downloads\raven.jpg")
+    image = Image.open("raven.jpg")
     
     #putting two columns to put the image nd title side by side...
     col1, col2 = st.columns([0.2, 0.9])  # Adjust the ratio as needed
