@@ -24,7 +24,7 @@ script_dir = os.path.dirname(__file__)
 #image_path = os.path.join(script_dir, "raven.JPG")
 
 try:
-    inside_logo = Image.open("raven.png")
+    inside_logo = Image.open("raven.jpg")
     outside_icon = Image.open("RAVEN (2).png")
     
     #putting two columns to put the image nd title side by side...
