@@ -31,7 +31,7 @@ try:
     col1, col2 = st.columns([0.2, 0.9])  # Adjust the ratio as needed
     with col1:
         if inside_logo:
-            st.image(inside_logo, width=80)  # Adjust the width as needed
+            st.image(inside_logo, width=90)  # Adjust the width as needed
     with col2:
         st.title("Raven A.I.")
 
