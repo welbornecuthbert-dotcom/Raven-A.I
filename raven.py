@@ -24,21 +24,23 @@ script_dir = os.path.dirname(__file__)
 #image_path = os.path.join(script_dir, "raven.JPG")
 
 try:
-    image = Image.open("raven.jpg")
+    inside_logo = Image.open("raven.png")
+    outside_icon = Image.open("RAVEN (2).png")
     
     #putting two columns to put the image nd title side by side...
     col1, col2 = st.columns([0.2, 0.9])  # Adjust the ratio as needed
     with col1:
-        st.image(image, width=90)
+        if inside_logo:
+            st.image(inside_logo, width=80)  # Adjust the width as needed
     with col2:
         st.title("Raven A.I.")
 
-    st.set_page_config(page_title="Raven A.I.", page_icon=image, layout="centered")
+    st.set_page_config(page_title="Raven A.I.", page_icon=outside_icon, layout="centered")
 except FileNotFoundError:
     st.warning(f"Image file not found.")
-    image = "🐦"
+    outside_icon = "🐦"
 
-#st.title("🐦‍⬛ Raven A.I.")
+st.title(" Raven A.I.")
 st.caption("© Awaza Cuthbert Welborne's personal assistant")
 
 if "messages" not in st.session_state:
