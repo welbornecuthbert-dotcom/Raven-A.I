@@ -40,7 +40,7 @@ except FileNotFoundError:
     st.warning(f"Image file not found.")
     outside_icon = "🐦"
 
-st.title(" Raven A.I.")
+#st.title(" Raven A.I.")
 st.caption("© Awaza Cuthbert Welborne's personal assistant")
 
 if "messages" not in st.session_state:
