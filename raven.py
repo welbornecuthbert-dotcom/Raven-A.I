@@ -69,7 +69,7 @@ if prompt := st.chat_input("What is your command, Master?"):
 
         # Generate response
         response = client.models.generate_content(
-            model="gemma-3-27b-it", #since the "gemini-2.5-flash" experiences high demand easily...im switching back to the "gemma-3-27b-it"
+            model="gemini-2.5-flash",
             contents=history,
             config=types.GenerateContentConfig(
                 system_instruction=personality,
